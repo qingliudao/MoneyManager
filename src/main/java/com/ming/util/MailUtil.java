@@ -95,7 +95,7 @@ public class MailUtil {
 				message.setSubject(subject);
 				
 				// 设置邮件的内容体
-				message.setContent(content, "text/html;charset=UTF-8");
+				message.setContent(content, "text/html;charset=gbk");
 				
 				// 发送邮件
 				Transport.send(message);

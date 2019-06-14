@@ -49,7 +49,7 @@ public class WebUtil extends ActionSupport {
 	public static void writeText(String string) {
 		try {
 			HttpServletResponse response = ServletActionContext.getResponse();
-			response.setContentType("text/plain; charset=UTF-8");
+			response.setContentType("text/plain; charset=gbk");
 			PrintWriter out = response.getWriter();
 			out.write(string);
 			out.flush();
@@ -66,7 +66,7 @@ public class WebUtil extends ActionSupport {
 	public static void writeXml(String string) {
 		try {
 			HttpServletResponse response = ServletActionContext.getResponse();
-			response.setContentType("text/xml; charset=UTF-8");
+			response.setContentType("text/xml; charset=gbk");
 			PrintWriter out = response.getWriter();
 			out.write(string);
 			out.flush();
@@ -83,7 +83,7 @@ public class WebUtil extends ActionSupport {
 	public static void writeJson(String string) {
 		try {
 			HttpServletResponse response = ServletActionContext.getResponse();
-			response.setContentType("application/json; charset=UTF-8");
+			response.setContentType("application/json; charset=gbk");
 			PrintWriter out = response.getWriter();
 			out.write(string);
 			out.flush();
@@ -100,7 +100,7 @@ public class WebUtil extends ActionSupport {
 	public static void writeJsonp(String string) {
 		try {
 			HttpServletResponse response = ServletActionContext.getResponse();
-			response.setContentType("text/javascript; charset=UTF-8");
+			response.setContentType("text/javascript; charset=gbk");
 			PrintWriter out = response.getWriter();
 			out.write("handleResponse(" + string + ")");
 			out.flush();
